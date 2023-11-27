@@ -1,0 +1,336 @@
+* {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.skills-sections{
+  width: 60px;
+  height: 60px;
+  background-color: var(--hover-color);
+  border-radius: 50px 50px;
+display: flex;
+margin-left: 650px;
+justify-content: center;
+
+}
+.skills-sections> h1{
+  padding:15px ;
+  align-items: center;
+  font-size: 35px;
+  color: var(--text-color);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.skills-sections> button{
+  margin-top: 3px;
+ margin: 1em;
+}
+section{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: fit-content;
+  margin-top: -60px;
+}
+
+.card1 {
+  width: 160px;
+  height: 160px;
+  background-color: transparent;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.card1 > .outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: var(--outer-box-shadow);
+}
+
+.card1 > .outer > .inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: var(--inner-box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner > #number {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+/* Updated the circle styling */
+circle {
+  fill: transparent;
+  stroke: var(--hover-color);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: roller 2s linear forwards;
+}
+
+svg {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+@keyframes roller {
+  100% {
+    stroke-dasharray: 165;
+  }
+}
+
+.section2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: fit-content;
+}
+.card2{
+  width: 160px;
+  height: 160px;
+  background-color: transparent;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+.card2 > .outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: var(--outer-box-shadow);
+}
+
+.card2 > .outer > .inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: var(--inner-box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card2> .inner > #number {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.card2> circle {
+  fill: transparent;
+  stroke: var(--hover-color);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: roller 2s linear forwards;
+}
+
+.card2> svg {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+@keyframes roller {
+  100% {
+    stroke-dasharray: 165;
+  }
+}
+
+@media (max-width: 1080px) {
+  .skills-sections{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 450px;
+    margin-top: 50px;
+  }
+  .skills-sections> h1{
+  font-size: 35px;
+  }
+  section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+  }
+  .section2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  margin: 10px; 
+
+  }
+  .card1{
+    width: 160px;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+  .card2 {
+    width: 160px;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 40px; }
+}
+
+
+@media (max-width: 760px) {
+  .skills-sections{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 350px;
+    margin-top: 50px;
+  }
+  .skills-sections> h1{
+  font-size: 35px;
+  }
+  section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+  }
+  .section2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  margin: 10px; 
+
+  }
+  .card1{
+    width: 160px;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+  .card2 {
+    width: 160px;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 40px; }
+}
+
+
+@media (max-width: 600px) {
+  .skills-sections{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  .skills-sections> h1{
+  font-size: 30px;
+  }
+  section {
+    width: 50%;
+    height: auto;
+    display: inline;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 100px;
+  }
+  .section2 {
+    width: 50%;
+    height: auto;
+    display: inline;
+    justify-content: center;
+    align-items: center; 
+  margin: 10px; 
+
+  }
+  .card1{
+    width: 50px;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+  .card2 {
+    width: 100px;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 40px; }
+}
+
+
+@media (max-width: 400px) {
+  .skills-sections{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 50px;
+  }
+  .skills-sections> h1{
+  font-size: 22px;
+  }
+  section {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center; 
+  margin: 10px; 
+}
+  .section2{
+ display: none;
+  }
+}

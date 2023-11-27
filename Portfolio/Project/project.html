@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="./project.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700;800&family=Cinzel:wght@500;600;700;800&family=Comfortaa:wght@300;400&family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400&family=Hind:wght@300;400;500;600;700&family=Karla:wght@200;300;400;500;600&family=Milonga&family=Mulish:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200;300;400;500;600&family=Ysabeau+SC:wght@1;88;100;200&display=swap" rel="stylesheet">
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+        <!-- NAVIGATION BAR START -->
+        <nav>
+            <div class="logo">
+              <img src="../assets/logo.png" alt="logo" />
+            </div>
+            <ul class="sidebar">
+              <li onclick="hideSidebar()" class="toggle"><a href="#"><i class="fa-solid fa-ellipsis"></i></a></li>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="../About/about.html">ABOUT</a></li>
+              <li><a href="../Skills/Skills.html">SKILLS</a></li>
+              <li><a href="../Project/project.html">PROJECTS</a></li>
+
+              <button type="button"><a href="../Contact/contact.html">CONTACT</a></button>
+            </ul>
+            <ul>
+              <li class="hideOnMobile"><a href="../index.html">HOME</a></li>
+              <li class="hideOnMobile"><a href="../About/about.html">ABOUT</a></li>
+              <li class="hideOnMobile"><a href="../Skills/Skills.html">SKILLS</a></li>
+              <li class="hideOnMobile"><a href="../Project/project.html">PROJECTS</a></li>
+  
+              <button type="button" class="hideOnMobile"><a href="../Contact/contact.html">CONTACT</a></button>
+              <li onclick="showSidebar()" class="toggle" id="verticle-ellipsis"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+            </ul>
+          </div>
+          </nav>
+          <!-- NAVIGATION BAR END -->
+          <!-- PROJECTS  -->
+          <div class="project-section">
+            <!-- Project Card Start || PROJECT GROUP-->
+            <div class="project-card">
+              <div class="pro-card1">
+                <img src="../assets/Project-01.png" alt="Image Project 01" />
+             <div class="card-btn1">
+                <a href="https://github.com/iqrarafiq12/MernStack-Projects/tree/master/portfolio">Source Code</a>
+                <br><a href="https://imagery-inn.netlify.app/">Live Preview</a>
+              </div>
+              <p style="text-align: center; font-size: 12px; padding-bottom: 10px; margin: 10px;">This is a portfolio website and i create with some feature using vite.js and Tailwind CSS</p>
+              </div>
+              <div class="pro-card2">
+                <img src="../assets/Project-02.png" alt="Image Project 02" />
+                <div class="card-btn2">
+                  <a href="https://github.com/iqrarafiq12/ToDo-App">Source Code</a>
+                  <br><a href="#">Live Preview</a>
+                </div>
+                <p style="text-align: center; font-size: 12px; padding-bottom: 10px; margin: 10px;">This is a TODO LIST APP and i create with some feature using React.JS & Local Storage</p>
+              </div>
+              <div class="pro-card3">
+                <img src="../assets/Project-03.png" alt="Image Project 03" />
+                <div class="card-btn3">
+                  <a href="https://github.com/iqrarafiq12/Projects-For-YT/tree/main/Count%20Down%20Timer">Source Code</a>
+                  <br><a href="https://countdown-byiqra.netlify.app/">Live Preview</a>
+                </div>
+                <p style="text-align: center; font-size: 12px; padding-bottom: 10px; margin: 10px;">This is a CountDown Timer and i create with HTML CSS, & JAVASCRIPT</p>
+              </div>
+            </div>
+          </div>
+          <script src="../script.js"></script>
+  </body>
+</html>
